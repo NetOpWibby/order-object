@@ -44,5 +44,5 @@
     "test:assert": "ts-node test/index.ts"
   },
   "types": "dist/index.d.ts",
-  "version": "2020.02.21"
+  "version": "2020.02.21.1"
 }

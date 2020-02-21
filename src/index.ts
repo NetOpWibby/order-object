@@ -21,7 +21,7 @@ export const order = (maybeObject?: any) => {
 
     return Object.setPrototypeOf({
       ...objectSoFar,
-      [currentKey]: maybeSortedValue
+      [currentKey]: maybeSortedValue === null ? 0 : maybeSortedValue
     }, Object.getPrototypeOf(definitelyObject));
   }, {});
 };
