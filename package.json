@@ -5,16 +5,16 @@
   },
   "description": "Make sure your Object keys are in alphabetical order",
   "devDependencies": {
-    "@webb/config-prettier": "^2020.2.1-0.3",
+    "@webb/config-prettier": "^2020.3.9",
     "@webb/test": "^2020.2.12",
-    "chronver": "^2019.10.2-7.1",
+    "chronver": "^2020.3.9",
     "del-cli": "^3.0.0",
     "husky": "^4.2.3",
     "npm-run-all": "^4.1.5",
     "prettier": "^1.19.1",
     "ts-node": "^8.6.2",
-    "typescript": "^3.8.2",
-    "updates": "^9.3.3"
+    "typescript": "^3.8.3",
+    "updates": "^10.2.0"
   },
   "homepage": "https://code.webb.page/Webb/order-object",
   "husky": {
@@ -26,9 +26,6 @@
   "main": "dist/index.js",
   "name": "@webb/order-object",
   "prettier": "@webb/config-prettier",
-  "publishConfig": {
-    "registry": "https://npm.inc.sh"
-  },
   "repository": {
     "type": "git",
     "url": "https://code.webb.page/Webb/order-object"
@@ -44,5 +41,5 @@
     "test:assert": "ts-node test/index.ts"
   },
   "types": "dist/index.d.ts",
-  "version": "2020.02.21.1"
+  "version": "2020.03.09"
 }
