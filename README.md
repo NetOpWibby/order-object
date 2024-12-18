@@ -1,67 +1,58 @@
-# @webb/order-object
+# @netopwibby/order-object
 
-> Make sure your Object keys are in alphabetical order
+Ever get annoyed when your `Object` keys aren't in alphabetical order? No? Just me?
 
 
 
-## Install
+## Installation
 
 ```sh
-$ npm i @webb/order-object
+# deno
+deno add jsr:@netopwibby/order-object
+
+# node
+npx jsr add @netopwibby/order-object
 ```
 
 
 
 ## Usage
 
-```js
-// Import the default export
-import orderObject from "@webb/order-object";
+```ts
+// deno
+import { orderObject } from "jsr:@netopwibby/order-object";
 
-orderObject({ zebra: "yay", 1: "neo", horse: "neigh" });
-// ^ Returns { "1": "neo", horse: "neigh", zebra: "yay" }
-```
+// node
+import { orderObject } from "@netopwibby/order-object";
 
-```js
-// Or, export the named function
-import { order } from "@webb/order-object";
-
-order({ zebra: "yay", 1: "neo", horse: "neigh" });
-// ^ Returns { "1": "neo", horse: "neigh", zebra: "yay" }
+console.log(orderObject({ zebra: "yay", 1: "neo", horse: "neigh" }));
+// returns { "1": "neo", horse: "neigh", zebra: "yay" }
 ```
 
 
 
-## API
-
-### order(suppliedObject)
-#### suppliedObject
-
-Type: `object` (required)
-
-- If nothing is supplied, the response is `null`.
-- If you supply anything that is not an object, whatever you supplied is returned unchanged.
-
-
-
-## Tests
+### Running Tests
 
 ```sh
-# Run all tests, sequentially
-$ npm test
+# lint all TypeScript files
+deno lint
 
-# Test dependencies for latest versions
-$ npm run test:dependencies
+# type-check file
+deno check mod.ts
+deno check test.ts
 
-# Lint "src" directory
-$ npm run test:typescript
-
-# Test this module
-$ npm run test:assert
+# run the tests in `test.ts`
+deno test
 ```
 
 
 
-## Thanks
+## License
 
-[Maggie Shemayev](https://github.com/aleph-naught2tog) has a number of useful gists and this module is inspired by [one](https://gist.github.com/aleph-naught2tog/938dd20dfc53e91da952569fd5655e2d) of them.
+MIT
+
+
+
+## Prior Art
+
+- [@webb/order-object](https://github.com/NetOpWibby/order-object/tree/node.js): I made this when Node.js was my best friend. Now Deno is my best friend.
