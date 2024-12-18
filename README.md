@@ -1,6 +1,6 @@
 # @netopwibby/order-object
 
-Ever get annoyed when your `Object` keys aren't in alphabetical order? No? Just me?
+Ever get annoyed when your `Object` keys aren't in alphabetical order? No? Just me?
 
 
 
@@ -55,4 +55,4 @@ MIT
 
 ## Prior Art
 
-- [@webb/order-object](https://github.com/NetOpWibby/order-object/tree/node.js): I made this when Node.js was my best friend. Now Deno is my best friend.
+- [@webb/order-object](https://github.com/NetOpWibby/order-object/tree/node.js): I made this when Node.js was my best friend. Now Deno is my best friend.

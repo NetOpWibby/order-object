@@ -2,5 +2,5 @@
   "exports": "./mod.ts",
   "license": "MIT",
   "name": "@netopwibby/order-object",
-  "version": "0.1.0"
+  "version": "0.1.1"
 }
